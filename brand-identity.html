@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Identity & Design System – GharDoot | Your Local Delivery Partner</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              950: '#052e16'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- TOP ROLE SWITCHER BAR -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-brand-400"></span>
+        <span class="font-medium text-slate-200">GharDoot Platform Suite:</span>
+      </div>
+      <div class="flex items-center gap-1 sm:gap-2 flex-wrap">
+        <a href="index.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🛍️ Customer Storefront</span>
+        </a>
+        <a href="customer-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>📦 Customer Orders</span>
+        </a>
+        <a href="shopkeeper-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🏪 Shopkeeper</span>
+        </a>
+        <a href="delivery-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🛵 Delivery Partner (Doot)</span>
+        </a>
+        <a href="admin-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>⚙️ Admin</span>
+        </a>
+        <a href="brand-identity.html" class="px-2.5 py-1 rounded bg-brand-700 text-white font-semibold flex items-center gap-1 shadow-sm">
+          <span>🎨 Brand Identity Guide</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/logo.jpg" alt="GharDoot – Your Local Delivery Partner" class="h-14 sm:h-16 w-auto object-contain">
+      </a>
+
+      <div class="flex items-center gap-3">
+        <span class="bg-brand-100 text-brand-800 border border-brand-300 text-xs font-bold px-3 py-1 rounded-full">
+          Official Brand Book v2.0
+        </span>
+        <a href="index.html" class="bg-brand-700 hover:bg-brand-800 text-white font-bold text-xs px-4 py-2 rounded-xl transition">
+          Explore Website &rarr;
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN BRAND BOOK -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12 flex-1">
+    
+    <!-- BRAND HERO -->
+    <div class="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 text-white rounded-3xl p-8 sm:p-12 shadow-xl relative overflow-hidden">
+      <div class="relative z-10 max-w-3xl space-y-4">
+        <div class="inline-flex items-center gap-2 bg-brand-500/20 border border-brand-400/40 px-3.5 py-1 rounded-full text-xs font-bold text-brand-200">
+          <span>Official Brand System</span>
+          <span>•</span>
+          <span class="text-white">GharDoot</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
+          Brand Identity & Guidelines
+        </h1>
+        <p class="text-base sm:text-xl text-brand-100 leading-relaxed font-normal">
+          The comprehensive brand framework for <strong class="text-white font-bold">GharDoot</strong> – connecting rural households with neighborhood village kiranas through trusted hyperlocal delivery partners.
+        </p>
+
+        <!-- Official Identity Pillars -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/15">
+            <div class="text-xs uppercase tracking-wider text-brand-200 font-bold">Brand Name</div>
+            <div class="text-2xl font-black text-white mt-1">GharDoot</div>
+            <div class="text-xs text-brand-300 mt-1">Official Name Everywhere</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/15">
+            <div class="text-xs uppercase tracking-wider text-brand-200 font-bold">Brand Descriptor</div>
+            <div class="text-sm font-bold text-white mt-1">Your Local Delivery Partner</div>
+            <div class="text-xs text-brand-300 mt-1">Used below brand name</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/15">
+            <div class="text-xs uppercase tracking-wider text-brand-200 font-bold">Official Tagline</div>
+            <div class="text-sm font-bold text-white mt-1">Har Zaroorat, Ghar Tak!</div>
+            <div class="text-xs text-brand-300 mt-1">Hero section & footer</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute right-0 bottom-0 opacity-10 pointer-events-none">
+        <img src="assets/images/logo-icon.svg" class="w-96 h-96" alt="">
+      </div>
+    </div>
+
+    <!-- 1. BUSINESS CONCEPT & PHILOSOPHY -->
+    <section class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4">
+        <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Foundation</span>
+        <h2 class="text-2xl font-black text-slate-900 mt-1">Business Concept & Mission</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+          <p class="text-base text-slate-800 font-medium">
+            <strong class="text-brand-800 font-bold">GharDoot</strong> is a village-based hyperlocal grocery and daily essentials delivery platform connecting customers with existing local shops.
+          </p>
+          <p>
+            Unlike urban dark-store delivery models that displace neighborhood stores, GharDoot champions and empowers local village Kiranas, dairies, and sabzi mandis. By mobilizing local rural youth as "GharDoots" (delivery messengers/heroes), we provide village residents with 20–30 minute doorstep delivery.
+          </p>
+          <div class="p-4 bg-brand-50 rounded-2xl border border-brand-200 text-xs text-brand-900 space-y-1">
+            <div class="font-bold">Etymology of GharDoot:</div>
+            <div>• <strong class="text-brand-800 font-semibold">Ghar (घर)</strong>: Home, family, hearth, warmth, and sanctuary in rural India.</div>
+            <div>• <strong class="text-brand-800 font-semibold">Doot (दूत)</strong>: Messenger, trusted envoy, swift courier, and carrier of goodwill.</div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 space-y-4">
+          <h3 class="text-sm font-black text-slate-900 uppercase tracking-wide">Brand Core Attributes</h3>
+          
+          <div class="space-y-3">
+            <div class="flex items-start gap-3">
+              <span class="w-7 h-7 rounded-lg bg-brand-100 text-brand-700 font-bold flex items-center justify-center shrink-0 text-sm">1</span>
+              <div>
+                <h4 class="text-xs font-bold text-slate-900">Hyperlocal Village Trust</h4>
+                <p class="text-xs text-slate-500">Connecting shoppers with Kirana owners they've known for generations.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span class="w-7 h-7 rounded-lg bg-brand-100 text-brand-700 font-bold flex items-center justify-center shrink-0 text-sm">2</span>
+              <div>
+                <h4 class="text-xs font-bold text-slate-900">Fast Rural Doorstep Speed</h4>
+                <p class="text-xs text-slate-500">Delivering daily essentials in 20-30 minutes directly to village homes.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span class="w-7 h-7 rounded-lg bg-brand-100 text-brand-700 font-bold flex items-center justify-center shrink-0 text-sm">3</span>
+              <div>
+                <h4 class="text-xs font-bold text-slate-900">Empowering Local Retail</h4>
+                <p class="text-xs text-slate-500">Zero commission on shopkeeper goods; strengthening village commerce.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span class="w-7 h-7 rounded-lg bg-brand-100 text-brand-700 font-bold flex items-center justify-center shrink-0 text-sm">4</span>
+              <div>
+                <h4 class="text-xs font-bold text-slate-900">Dignified Gig Work for Village Youth</h4>
+                <p class="text-xs text-slate-500">Creating flexible, local income opportunities for delivery heroes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. LOGO DESIGN CONCEPT & ANATOMY -->
+    <section class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4">
+        <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Visual Identity</span>
+        <h2 class="text-2xl font-black text-slate-900 mt-1">Logo Concept: Home + Delivery Fusion</h2>
+        <p class="text-xs text-slate-500">A memorable brandmark crafted around the fusion of a village home and swift delivery messenger.</p>
+      </div>
+
+      <!-- Master Logo Showcase -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Official Master Logo (As Provided) -->
+        <div class="p-8 rounded-2xl border border-slate-200 bg-white flex flex-col items-center justify-center text-center space-y-4">
+          <div class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Official Master Logo (Original Artwork)</div>
+          <img src="assets/images/logo.jpg" alt="GharDoot Master Logo" class="h-28 w-auto object-contain">
+          <div class="text-[11px] text-slate-500">Official artwork with green house, orange delivery box on scooter & "Har Zaroor, Ghar Tak!"</div>
+        </div>
+
+        <!-- Vector SVG Lockup -->
+        <div class="p-8 rounded-2xl border border-slate-200 bg-slate-50 flex flex-col items-center justify-center text-center space-y-4">
+          <div class="text-xs text-brand-700 font-semibold uppercase tracking-wider">Scalable Vector SVG Lockup</div>
+          <img src="assets/images/logo.svg" alt="GharDoot Vector Logo" class="h-28 w-auto object-contain">
+          <div class="text-[11px] text-slate-500">Crisp vector SVG for ultra-high-resolution billboards and responsive screens</div>
+        </div>
+      </div>
+
+      <!-- Logo Anatomy Breakdown -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
+        <div class="p-5 rounded-2xl bg-brand-50/50 border border-brand-200">
+          <div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center mb-3">🏡</div>
+          <h4 class="font-bold text-sm text-slate-900 mb-1">The Home Roof (Ghar)</h4>
+          <p class="text-xs text-slate-600">The iconic silhouette of a traditional Indian village home represents safety, shelter, neighborhood roots, and warm doorstep service.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-brand-50/50 border border-brand-200">
+          <div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center mb-3">📦</div>
+          <h4 class="font-bold text-sm text-slate-900 mb-1">The Delivery Box (Doot)</h4>
+          <p class="text-xs text-slate-600">Embedded within the home is a parcel wrapped with ribbon, symbolizing grocery and daily essentials being delivered directly to the doorstep.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-brand-50/50 border border-brand-200">
+          <div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center mb-3">⚡</div>
+          <h4 class="font-bold text-sm text-slate-900 mb-1">Speed Wing & Wheel</h4>
+          <p class="text-xs text-slate-600">Dynamic speed trails, a courier arrow wing, and a delivery wheel convey swift hyperlocal movement across village lanes.</p>
+        </div>
+      </div>
+
+      <!-- Standalone Icon Showcase -->
+      <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <img src="assets/images/logo-icon.svg" class="w-16 h-16 rounded-2xl shadow-sm" alt="GharDoot App Icon">
+          <div>
+            <h4 class="text-sm font-bold text-slate-900">Standalone App Icon & Favicon</h4>
+            <p class="text-xs text-slate-500">Optimized for mobile app launchers, browser tabs, social avatars, and rider stickers.</p>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <a href="assets/images/logo.svg" target="_blank" class="text-xs font-bold text-brand-700 bg-white border border-brand-300 px-3 py-1.5 rounded-lg hover:bg-brand-50 transition">
+            View Logo SVG
+          </a>
+          <a href="assets/images/logo-icon.svg" target="_blank" class="text-xs font-bold text-brand-700 bg-white border border-brand-300 px-3 py-1.5 rounded-lg hover:bg-brand-50 transition">
+            View Icon SVG
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COLOR PALETTE: PROFESSIONAL GREEN & WHITE -->
+    <section class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4">
+        <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Color System</span>
+        <h2 class="text-2xl font-black text-slate-900 mt-1">Professional Green & White Palette</h2>
+        <p class="text-xs text-slate-500">Green symbolizes rural vitality, agriculture, freshness, and trust. White represents transparency, purity, and clarity.</p>
+      </div>
+
+      <!-- Swatches -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+        
+        <!-- Swatch 1 -->
+        <div class="space-y-2">
+          <div class="h-24 rounded-2xl bg-[#15803d] shadow-sm flex items-end p-2 text-white text-[10px] font-bold">
+            Primary
+          </div>
+          <div>
+            <div class="text-xs font-bold text-slate-900">Forest Green</div>
+            <div class="text-[11px] text-slate-500">#15803d</div>
+            <div class="text-[10px] text-brand-700">Headers, Brand CTAs</div>
+          </div>
+        </div>
+
+        <!-- Swatch 2 -->
+        <div class="space-y-2">
+          <div class="h-24 rounded-2xl bg-[#16a34a] shadow-sm flex items-end p-2 text-white text-[10px] font-bold">
+            Secondary
+          </div>
+          <div>
+            <div class="text-xs font-bold text-slate-900">Emerald Action</div>
+            <div class="text-[11px] text-slate-500">#16a34a</div>
+            <div class="text-[10px] text-brand-700">Buttons, Active States</div>
+          </div>
+        </div>
+
+        <!-- Swatch 3 -->
+        <div class="space-y-2">
+          <div class="h-24 rounded-2xl bg-[#22c55e] shadow-sm flex items-end p-2 text-white text-[10px] font-bold">
+            Accent
+          </div>
+          <div>
+            <div class="text-xs font-bold text-slate-900">Vibrant Leaf</div>
+            <div class="text-[11px] text-slate-500">#22c55e</div>
+            <div class="text-[10px] text-brand-700">Badges, Highlights</div>
+          </div>
+        </div>
+
+        <!-- Swatch 4 -->
+        <div class="space-y-2">
+          <div class="h-24 rounded-2xl bg-[#86efac] shadow-sm flex items-end p-2 text-slate-900 text-[10px] font-bold">
+            Mint Light
+          </div>
+          <div>
+            <div class="text-xs font-bold text-slate-900">Spring Mint</div>
+            <div class="text-[11px] text-slate-500">#86efac</div>
+            <div class="text-[10px] text-brand-700">Borders, Glows</div>
+          </div>
+        </div>
+
+        <!-- Swatch 5 -->
+        <div class="space-y-2">
+          <div class="h-24 rounded-2xl bg-[#f0fdf4] border border-brand-200 shadow-sm flex items-end p-2 text-brand-900 text-[10px] font-bold">
+            Surface Tint
+          </div>
+          <div>
+            <div class="text-xs font-bold text-slate-900">Village Meadow</div>
+            <div class="text-[11px] text-slate-500">#f0fdf4</div>
+            <div class="text-[10px] text-brand-700">Hero BG, Card Fill</div>
+          </div>
+        </div>
+
+        <!-- Swatch 6 -->
+        <div class="space-y-2">
+          <div class="h-24 rounded-2xl bg-[#ffffff] border border-slate-300 shadow-sm flex items-end p-2 text-slate-800 text-[10px] font-bold">
+            Crisp White
+          </div>
+          <div>
+            <div class="text-xs font-bold text-slate-900">Pure White</div>
+            <div class="text-[11px] text-slate-500">#ffffff</div>
+            <div class="text-[10px] text-brand-700">Cards, Inverted Text</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. TYPOGRAPHY & TAGLINE RULES -->
+    <section class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4">
+        <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Typography & Voice</span>
+        <h2 class="text-2xl font-black text-slate-900 mt-1">Typography & Tagline Standards</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Typography -->
+        <div class="space-y-4">
+          <h3 class="text-sm font-black text-slate-900 uppercase tracking-wider">Brand Typefaces</h3>
+          
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+            <span class="text-xs text-brand-700 font-bold">Primary Heading Font</span>
+            <div class="text-2xl font-black text-slate-900 font-['Poppins']">Poppins / Inter Black</div>
+            <p class="text-xs text-slate-500">Used for headlines, hero titles, store names, and brand lockups.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+            <span class="text-xs text-brand-700 font-bold">Body & Interface Font</span>
+            <div class="text-base font-normal text-slate-800 font-['Inter']">Inter (Regular, Medium, Semibold)</div>
+            <p class="text-xs text-slate-500">High legibility for grocery listings, village addresses, and pricing numbers.</p>
+          </div>
+        </div>
+
+        <!-- Tagline Rules -->
+        <div class="space-y-4">
+          <h3 class="text-sm font-black text-slate-900 uppercase tracking-wider">Tagline & Descriptor Placement Rules</h3>
+          
+          <div class="p-4 rounded-2xl bg-brand-50 border border-brand-200 space-y-2">
+            <div class="text-xs font-bold text-brand-800">1. Tagline: "Har Zaroorat, Ghar Tak!"</div>
+            <p class="text-xs text-slate-600">Must be featured prominently in the hero section and footer of the website. Translates to "Every Need, Right to Your Doorstep!".</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-brand-50 border border-brand-200 space-y-2">
+            <div class="text-xs font-bold text-brand-800">2. Descriptor: "Your Local Delivery Partner"</div>
+            <p class="text-xs text-slate-600">Positioned directly below the brand name GharDoot on header lockups, delivery partner uniforms, merchant storefront signage, and app store listings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. BRAND COMPLIANCE: DO'S AND DON'TS -->
+    <section class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4">
+        <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Compliance Checklist</span>
+        <h2 class="text-2xl font-black text-slate-900 mt-1">Brand Integrity Guidelines</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- DO's -->
+        <div class="bg-emerald-50/70 border border-emerald-200 rounded-2xl p-6 space-y-3">
+          <h3 class="text-sm font-bold text-emerald-900 flex items-center gap-2">
+            <span class="text-emerald-600 font-black">✓</span> MANDATORY DO'S
+          </h3>
+          <ul class="space-y-2 text-xs text-emerald-800 leading-relaxed">
+            <li>• <strong>Display GharDoot</strong> as the official brand name across the entire application and all stakeholder views.</li>
+            <li>• <strong>Use "Your Local Delivery Partner"</strong> below the brand name in headers, footers, and official badges.</li>
+            <li>• <strong>Display "Har Zaroorat, Ghar Tak!"</strong> on the homepage hero section and footer.</li>
+            <li>• <strong>Maintain consistent green and white branding</strong> across Customer, Shopkeeper, Delivery Partner, and Admin dashboards.</li>
+            <li>• <strong>Preserve the custom Home + Delivery logo</strong> mark with its correct proportions and clear space.</li>
+          </ul>
+        </div>
+
+        <!-- DON'TS -->
+        <div class="bg-rose-50/70 border border-rose-200 rounded-2xl p-6 space-y-3">
+          <h3 class="text-sm font-bold text-rose-900 flex items-center gap-2">
+            <span class="text-rose-600 font-black">✕</span> STRICT DON'TS
+          </h3>
+          <ul class="space-y-2 text-xs text-rose-800 leading-relaxed">
+            <li>• <strong>DO NOT use the previous legacy brand name anywhere</strong> in the final application, codebase, documentation, or user interfaces.</li>
+            <li>• <strong>Never alter or skew</strong> the home + delivery parcel proportions in the logo.</li>
+            <li>• <strong>Never use unauthorized color palettes</strong> (e.g. orange, purple or blue) for the primary brandmark.</li>
+            <li>• <strong>Do not present GharDoot as an urban dark-store</strong> platform — it is strictly village-based and hyperlocal connecting existing shops.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PORTAL DEMONSTRATION & ROLE SWITCHER -->
+    <section class="bg-brand-900 text-white rounded-3xl p-8 border border-brand-800 space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <span class="text-xs uppercase tracking-wider text-brand-300 font-bold">Unified Ecosystem</span>
+          <h2 class="text-2xl font-black mt-1">Experience GharDoot Across All Stakeholder Portals</h2>
+          <p class="text-xs text-brand-200 mt-1">Click to launch any of the unified dashboards to inspect the consistent brand implementation.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+        <a href="index.html" class="p-4 rounded-2xl bg-white/10 hover:bg-white/20 transition border border-white/15 block group">
+          <div class="text-2xl mb-2">🛍️</div>
+          <h4 class="font-bold text-sm text-white group-hover:text-brand-300 transition">Customer Storefront</h4>
+          <p class="text-xs text-brand-200 mt-1">Village grocery catalog, Kirana listings, interactive cart, and hero tagline.</p>
+        </a>
+
+        <a href="customer-dashboard.html" class="p-4 rounded-2xl bg-white/10 hover:bg-white/20 transition border border-white/15 block group">
+          <div class="text-2xl mb-2">📦</div>
+          <h4 class="font-bold text-sm text-white group-hover:text-brand-300 transition">Customer Orders</h4>
+          <p class="text-xs text-brand-200 mt-1">Real-time stepper tracking from Kirana packaging to delivery arrival.</p>
+        </a>
+
+        <a href="shopkeeper-dashboard.html" class="p-4 rounded-2xl bg-white/10 hover:bg-white/20 transition border border-white/15 block group">
+          <div class="text-2xl mb-2">🏪</div>
+          <h4 class="font-bold text-sm text-white group-hover:text-brand-300 transition">Shopkeeper Hub</h4>
+          <p class="text-xs text-brand-200 mt-1">Merchant order packing queue, village inventory, and daily payouts.</p>
+        </a>
+
+        <a href="delivery-dashboard.html" class="p-4 rounded-2xl bg-white/10 hover:bg-white/20 transition border border-white/15 block group">
+          <div class="text-2xl mb-2">🛵</div>
+          <h4 class="font-bold text-sm text-white group-hover:text-brand-300 transition">Delivery Partner (Doot)</h4>
+          <p class="text-xs text-brand-200 mt-1">Route navigation, cash collection, and daily village gig earnings.</p>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-950 text-white border-t border-brand-900 py-6 text-xs text-center text-brand-300">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="font-bold text-white mb-1">GharDoot – Your Local Delivery Partner</p>
+      <p>Official Tagline: Har Zaroorat, Ghar Tak! · Official Brand Identity Manual</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard – GharDoot | Your Local Delivery Partner</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- TOP ROLE SWITCHER BAR -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-brand-400"></span>
+        <span class="font-medium text-slate-200">GharDoot Platform Suite:</span>
+      </div>
+      <div class="flex items-center gap-1 sm:gap-2 flex-wrap">
+        <a href="index.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🛍️ Customer Storefront</span>
+        </a>
+        <a href="customer-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>📦 Customer Orders</span>
+        </a>
+        <a href="shopkeeper-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🏪 Shopkeeper</span>
+        </a>
+        <a href="delivery-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🛵 Delivery Partner (Doot)</span>
+        </a>
+        <a href="admin-dashboard.html" class="px-2.5 py-1 rounded bg-brand-700 text-white font-semibold flex items-center gap-1 shadow-sm">
+          <span>⚙️ Admin Dashboard</span>
+        </a>
+        <a href="login.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🔑 Login</span>
+        </a>
+        <a href="brand-identity.html" class="px-2.5 py-1 rounded bg-brand-500/20 text-brand-300 hover:bg-brand-500/30 transition border border-brand-500/40">
+          <span>🎨 Brand Identity</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/logo.jpg" alt="GharDoot – Your Local Delivery Partner" class="h-14 sm:h-16 w-auto object-contain">
+      </a>
+
+      <div class="flex items-center gap-4">
+        <div class="bg-brand-50 border border-brand-200 px-3 py-1.5 rounded-full text-xs font-bold text-brand-800 flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-brand-600"></span>
+          <span>Central Operations Console</span>
+        </div>
+        <div class="auth-header-container"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN BODY -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1">
+    
+    <!-- Top Hero Banner with Tagline & Descriptor -->
+    <div class="bg-brand-900 rounded-3xl p-6 sm:p-8 text-white shadow-lg mb-8 relative overflow-hidden">
+      <div class="relative z-10 max-w-2xl">
+        <div class="inline-flex items-center gap-2 bg-brand-800/80 text-brand-200 text-xs font-bold px-3 py-1 rounded-full mb-2 border border-brand-700">
+          <span>GharDoot Admin Portal ·</span>
+          <span class="text-white font-extrabold">Har Zaroorat, Ghar Tak!</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-black">Rural Hyperlocal Control Center</h1>
+        <p class="text-xs sm:text-sm text-brand-100 mt-1">
+          Real-time governance of village clusters, onboarding of traditional Kiranas, tracking of GharDoot delivery heroes, and fulfillment metrics.
+        </p>
+      </div>
+      <div class="absolute right-4 bottom-2 opacity-10 pointer-events-none">
+        <img src="assets/images/logo-icon.svg" class="w-48 h-48" alt="">
+      </div>
+    </div>
+
+    <!-- Metrics Cards -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+        <div class="text-xs text-slate-500 font-medium">Active Village Clusters</div>
+        <div class="text-2xl font-black text-brand-800 mt-1">4 Villages</div>
+        <div class="text-[11px] text-brand-700 font-semibold mt-1">Sadarpur & Bilaspur Blocks</div>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+        <div class="text-xs text-slate-500 font-medium">Connected Kirana Shops</div>
+        <div class="text-2xl font-black text-slate-900 mt-1">22 Stores</div>
+        <div class="text-[11px] text-emerald-600 font-semibold mt-1">100% locally owned</div>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+        <div class="text-xs text-slate-500 font-medium">Active GharDoot Fleet</div>
+        <div class="text-2xl font-black text-brand-700 mt-1">14 Heroes</div>
+        <div class="text-[11px] text-emerald-600 font-semibold mt-1">12 currently on trips</div>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+        <div class="text-xs text-slate-500 font-medium">Today's Fulfillment Rate</div>
+        <div class="text-2xl font-black text-slate-900 mt-1">99.4%</div>
+        <div class="text-[11px] text-slate-500 mt-1">Avg delivery time: 22 mins</div>
+      </div>
+    </div>
+
+    <!-- Village Clusters Table & Fleet Status -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <!-- Left Column: Village Clusters & Kirana Network -->
+      <div class="lg:col-span-2 space-y-6">
+        
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+            <div>
+              <h2 class="text-base font-black text-slate-900 flex items-center gap-2">
+                <span>📍</span> Village Cluster Operations
+              </h2>
+              <p class="text-xs text-slate-500">Live clusters served by GharDoot delivery network</p>
+            </div>
+            <button onclick="alert('Adding new village cluster wizard')" class="bg-brand-700 hover:bg-brand-800 text-white font-bold text-xs px-3.5 py-1.5 rounded-xl transition">
+              + Add Village Cluster
+            </button>
+          </div>
+
+          <div class="divide-y divide-slate-100 mt-2 text-xs">
+            <div class="py-3 flex items-center justify-between">
+              <div>
+                <div class="font-bold text-slate-900">Rampur Village (Sadarpur Block)</div>
+                <div class="text-slate-500">PIN: 244901 · 6 Shops · 4 Delivery Heroes</div>
+              </div>
+              <span class="bg-emerald-100 text-emerald-800 font-bold px-2.5 py-1 rounded-full">Optimal Speed</span>
+            </div>
+
+            <div class="py-3 flex items-center justify-between">
+              <div>
+                <div class="font-bold text-slate-900">Kishanpur Village (Sadarpur Block)</div>
+                <div class="text-slate-500">PIN: 244902 · 5 Shops · 3 Delivery Heroes</div>
+              </div>
+              <span class="bg-emerald-100 text-emerald-800 font-bold px-2.5 py-1 rounded-full">Optimal Speed</span>
+            </div>
+
+            <div class="py-3 flex items-center justify-between">
+              <div>
+                <div class="font-bold text-slate-900">Shivnagar (Bilaspur Block)</div>
+                <div class="text-slate-500">PIN: 244903 · 4 Shops · 2 Delivery Heroes</div>
+              </div>
+              <span class="bg-emerald-100 text-emerald-800 font-bold px-2.5 py-1 rounded-full">Optimal Speed</span>
+            </div>
+
+            <div class="py-3 flex items-center justify-between">
+              <div>
+                <div class="font-bold text-slate-900">Sundarpur (Bilaspur Block)</div>
+                <div class="text-slate-500">PIN: 244904 · 7 Shops · 5 Delivery Heroes</div>
+              </div>
+              <span class="bg-emerald-100 text-emerald-800 font-bold px-2.5 py-1 rounded-full">Optimal Speed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Registered Shops Approvals -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+          <h3 class="text-sm font-bold text-slate-900 mb-3">Pending Kirana Merchant Onboarding</h3>
+          <div class="space-y-3 text-xs">
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
+              <div>
+                <div class="font-bold text-slate-800">Verma General Store & Dairy</div>
+                <div class="text-slate-500">Mohanpur Village · Applied 2 hours ago</div>
+              </div>
+              <div class="flex gap-2">
+                <button onclick="alert('Merchant Approved and activated on GharDoot!')" class="bg-brand-700 text-white font-bold px-3 py-1 rounded-lg">Approve</button>
+                <button class="bg-slate-200 text-slate-700 px-3 py-1 rounded-lg">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Brand Health & Configuration -->
+      <div class="space-y-6">
+        
+        <!-- Brand System Badge -->
+        <div class="bg-brand-800 text-white rounded-2xl p-6 shadow-md border border-brand-700 space-y-3">
+          <div class="text-xs text-brand-200 uppercase font-bold tracking-wider">Brand Enforcement</div>
+          <h4 class="text-sm font-black">Official Platform Brand: GharDoot</h4>
+          <p class="text-xs text-brand-100 leading-relaxed">
+            Descriptor: <strong>Your Local Delivery Partner</strong><br>
+            Tagline: <strong>Har Zaroorat, Ghar Tak!</strong><br>
+            Color Palette: <strong>Professional Green & White</strong>
+          </p>
+          <a href="brand-identity.html" class="inline-block w-full text-center bg-white hover:bg-brand-50 text-brand-900 font-bold text-xs py-2.5 rounded-xl transition">
+            View Brand Identity Guidelines &rarr;
+          </a>
+        </div>
+
+        <!-- Admin Security & Password Management Card -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm text-xs space-y-3">
+          <div class="flex items-center justify-between">
+            <h4 class="font-bold text-slate-900 flex items-center gap-1.5">
+              <span>🔐</span> Admin Security & Password
+            </h4>
+            <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded-full">Active</span>
+          </div>
+          <p class="text-slate-500">Update the master admin password used for Email, Mobile No. or Username access.</p>
+          
+          <div class="space-y-2 pt-1">
+            <div>
+              <label class="block text-[11px] font-bold text-slate-600 mb-0.5">Admin Identifier (Email / Mobile / User)</label>
+              <input type="text" id="dash-admin-id" value="admin@ghardoot.in" class="w-full p-2 text-xs rounded-lg border border-slate-200 bg-slate-50 text-slate-700 font-mono" readonly>
+            </div>
+            <div>
+              <label class="block text-[11px] font-bold text-slate-600 mb-0.5">New Password (Min 4 chars)</label>
+              <input type="password" id="dash-new-pass" placeholder="Enter new password" class="w-full p-2 text-xs rounded-lg border border-slate-200 focus:border-brand-500 focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-[11px] font-bold text-slate-600 mb-0.5">Confirm New Password</label>
+              <input type="password" id="dash-confirm-pass" placeholder="Re-type new password" class="w-full p-2 text-xs rounded-lg border border-slate-200 focus:border-brand-500 focus:outline-none">
+            </div>
+            <button onclick="handleDashboardSetPassword()" class="w-full mt-2 bg-brand-700 hover:bg-brand-800 text-white font-bold py-2 rounded-lg transition shadow-xs">
+              Save New Admin Password
+            </button>
+          </div>
+        </div>
+
+        <!-- Hyperlocal Fee Parameters -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm text-xs space-y-3">
+          <h4 class="font-bold text-slate-900">Rural Hyperlocal Settings</h4>
+          <div class="flex justify-between py-1 border-b border-slate-100">
+            <span class="text-slate-500">Max Delivery Radius</span>
+            <span class="font-bold text-slate-800">4.5 km</span>
+          </div>
+          <div class="flex justify-between py-1 border-b border-slate-100">
+            <span class="text-slate-500">Base Village Delivery Fee</span>
+            <span class="font-bold text-brand-800">₹15</span>
+          </div>
+          <div class="flex justify-between py-1 border-b border-slate-100">
+            <span class="text-slate-500">Free Delivery Threshold</span>
+            <span class="font-bold text-brand-800">₹299</span>
+          </div>
+          <div class="flex justify-between py-1">
+            <span class="text-slate-500">Shopkeeper Commission</span>
+            <span class="font-bold text-emerald-700">0% (Pure Empowerment)</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-950 text-white border-t border-brand-900 py-6 text-xs text-center text-brand-300">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="font-bold text-white mb-1">GharDoot – Your Local Delivery Partner</p>
+      <p>Official Tagline: Har Zaroorat, Ghar Tak! · Platform Administration Console</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/mock-data.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script>
+    function handleDashboardSetPassword() {
+      const id = document.getElementById('dash-admin-id').value;
+      const newPass = document.getElementById('dash-new-pass').value;
+      const confirmPass = document.getElementById('dash-confirm-pass').value;
+
+      const result = window.GharDootAuth.setAdminPassword(id, newPass, confirmPass);
+      if (result.success) {
+        alert(result.message);
+        document.getElementById('dash-new-pass').value = '';
+        document.getElementById('dash-confirm-pass').value = '';
+      } else {
+        alert(result.message);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const user = window.GharDootAuth.getAuthUser();
+      if (user && user.role === 'admin') {
+        const idField = document.getElementById('dash-admin-id');
+        if (idField) idField.value = user.email || user.phone || user.username || 'admin@ghardoot.in';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partner With Us – GharDoot | Your Local Delivery Partner</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              950: '#052e16'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- TOP ROLE SWITCHER BAR -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-brand-400"></span>
+        <span class="font-medium text-slate-200">GharDoot Platform Suite:</span>
+      </div>
+      <div class="flex items-center gap-1 sm:gap-2 flex-wrap">
+        <a href="index.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🛍️ Customer Storefront</span>
+        </a>
+        <a href="customer-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>📦 Customer Orders</span>
+        </a>
+        <a href="shopkeeper-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🏪 Shopkeeper</span>
+        </a>
+        <a href="delivery-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🛵 Delivery Partner (Doot)</span>
+        </a>
+        <a href="admin-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>⚙️ Admin</span>
+        </a>
+        <a href="partner-with-us.html" class="px-2.5 py-1 rounded bg-brand-700 text-white font-semibold flex items-center gap-1 shadow-sm">
+          <span>🤝 Partner With Us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/logo.jpg" alt="GharDoot – Your Local Delivery Partner" class="h-14 sm:h-16 w-auto object-contain">
+      </a>
+      <div class="flex items-center gap-4 text-xs font-bold">
+        <a href="index.html" class="text-slate-700 hover:text-brand-700">Home Storefront</a>
+        <a href="about.html" class="text-slate-700 hover:text-brand-700">About Mission</a>
+        <a href="shopkeeper-dashboard.html" class="bg-brand-50 text-brand-800 border border-brand-200 px-3.5 py-2 rounded-xl hover:bg-brand-100 transition">
+          Merchant Portal &rarr;
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12 flex-1">
+    
+    <!-- Hero Banner -->
+    <div class="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 text-white rounded-3xl p-8 sm:p-12 shadow-xl relative overflow-hidden">
+      <div class="relative z-10 max-w-3xl space-y-4">
+        <div class="inline-flex items-center gap-2 bg-brand-500/20 border border-brand-400/40 px-3.5 py-1 rounded-full text-xs font-bold text-brand-200">
+          <span>Grow With GharDoot</span>
+          <span>•</span>
+          <span class="text-white">Har Zaroorat, Ghar Tak!</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
+          Grow Your Village Shop or Earn Dignified Local Income
+        </h1>
+        <p class="text-base sm:text-lg text-brand-100 leading-relaxed font-normal">
+          Whether you own a neighborhood Kirana, a fresh dairy, or want to earn ₹15,000–₹20,000 monthly as a village delivery hero on your bike or bicycle — <strong class="text-white font-bold">GharDoot</strong> is your partner.
+        </p>
+
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a href="#kirana-form" class="bg-white text-brand-900 hover:bg-brand-50 font-bold text-xs px-5 py-3 rounded-xl transition shadow">
+            Register Village Shop &rarr;
+          </a>
+          <a href="#doot-form" class="bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs px-5 py-3 rounded-xl transition shadow">
+            Join as Delivery Hero (Doot) &rarr;
+          </a>
+        </div>
+      </div>
+      <div class="absolute right-0 bottom-0 opacity-10 pointer-events-none">
+        <img src="assets/images/logo-icon.svg" class="w-96 h-96" alt="">
+      </div>
+    </div>
+
+    <!-- Dual Forms Section -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      
+      <!-- Option 1: Shopkeeper Form -->
+      <div id="kirana-form" class="bg-white rounded-3xl p-6 sm:p-8 border border-brand-200 shadow-sm space-y-5">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-800 flex items-center justify-center text-2xl font-bold">
+            🏪
+          </div>
+          <div>
+            <h2 class="text-lg font-black text-slate-900">Register Your Village Kirana</h2>
+            <p class="text-xs text-brand-700 font-semibold">Zero registration fee · 100% margin retained</p>
+          </div>
+        </div>
+
+        <form onsubmit="event.preventDefault(); alert('Thank you! Your village kirana registration is received. GharDoot Area Manager will visit within 24 hours to activate your shop.'); this.reset();" class="space-y-4 text-xs">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Shop / Kirana Name</label>
+            <input type="text" required placeholder="e.g. Verma Kirana Store" class="w-full p-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:outline-none bg-slate-50">
+          </div>
+
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Owner Full Name</label>
+            <input type="text" required placeholder="e.g. Ramesh Chandra Verma" class="w-full p-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:outline-none bg-slate-50">
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">Mobile Number</label>
+              <input type="tel" required placeholder="+91 98765 00000" class="w-full p-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:outline-none bg-slate-50">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">Village Name</label>
+              <select required class="w-full p-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:outline-none bg-slate-50">
+                <option value="Rampur">Rampur Village (Sadarpur)</option>
+                <option value="Kishanpur">Kishanpur Village (Sadarpur)</option>
+                <option value="Shivnagar">Shivnagar (Bilaspur)</option>
+                <option value="Sundarpur">Sundarpur (Bilaspur)</option>
+                <option value="Other">Other Nearby Village</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Store Category</label>
+            <select required class="w-full p-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:outline-none bg-slate-50">
+              <option value="Kirana">Grocery & Spices (Kirana)</option>
+              <option value="Dairy">Fresh Dairy & Milk (Dairy)</option>
+              <option value="Sabzi">Vegetable & Fruit Mandi</option>
+              <option value="General">Daily Essentials & Hardware</option>
+            </select>
+          </div>
+
+          <div class="p-3 bg-brand-50 rounded-xl border border-brand-200 text-slate-600 space-y-1 text-[11px]">
+            <div class="font-bold text-brand-900">GharDoot Merchant Promise:</div>
+            <div>✓ We never open competing dark-stores.</div>
+            <div>✓ Daily automatic bank payouts of all online & cash orders.</div>
+            <div>✓ Dedicated GharDoot partners pick up goods right at your shop door.</div>
+          </div>
+
+          <button type="submit" class="w-full bg-brand-700 hover:bg-brand-800 text-white font-bold py-3.5 rounded-xl transition shadow">
+            Submit Shop Application
+          </button>
+        </form>
+      </div>
+
+      <!-- Option 2: Delivery Doot Hero Form -->
+      <div id="doot-form" class="bg-white rounded-3xl p-6 sm:p-8 border border-brand-200 shadow-sm space-y-5">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-800 flex items-center justify-center text-2xl font-bold">
+            🛵
+          </div>
+          <div>
+            <h2 class="text-lg font-black text-slate-900">Join as GharDoot Delivery Hero</h2>
+            <p class="text-xs text-brand-700 font-semibold">Earn ₹400–₹800 daily in your village</p>
+          </div>
+        </div>
+
+        <form onsubmit="event.preventDefault(); alert('Application received! GharDoot Coordinator will contact you for a brief onboarding and bag handover.'); this.reset();" class="space-y-4 text-xs">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Your Full Name</label>
+            <input type="text" required placeholder="e.g. Ajay Kumar" class="w-full p-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:outline-none bg-slate-50">
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">Mobile Number</label>
+              <input type="tel" required placeholder="+91 99887 00000" class="w-full p-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:outline-none bg-slate-50">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">Age</label>
+              <input type="number" min="18" max="60" required placeholder="18-50" class="w-full p-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:outline-none bg-slate-50">
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Your Village / Block</label>
+            <input type="text" required placeholder="e.g. Rampur Village, Sadarpur Block" class="w-full p-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:outline-none bg-slate-50">
+          </div>
+
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Vehicle Available</label>
+            <select required class="w-full p-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:outline-none bg-slate-50">
+              <option value="bike">Motorcycle / Scooter</option>
+              <option value="cycle">Bicycle</option>
+              <option value="walking">Walking / Local Area Hero</option>
+            </select>
+          </div>
+
+          <div class="p-3 bg-brand-50 rounded-xl border border-brand-200 text-slate-600 space-y-1 text-[11px]">
+            <div class="font-bold text-brand-900">GharDoot Partner Benefits:</div>
+            <div>✓ Flexible hours – work 2 hours or all day.</div>
+            <div>✓ Instant daily earnings settlement.</div>
+            <div>✓ Free GharDoot delivery bag and identification badge.</div>
+          </div>
+
+          <button type="submit" class="w-full bg-brand-700 hover:bg-brand-800 text-white font-bold py-3.5 rounded-xl transition shadow">
+            Join as Delivery Hero
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Partner Earnings Simulator -->
+    <section class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4 text-center max-w-xl mx-auto">
+        <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Transparent Growth</span>
+        <h2 class="text-2xl font-black text-slate-900 mt-1">Village Partner Earning Calculator</h2>
+        <p class="text-xs text-slate-500 mt-1">Estimate your additional monthly income with GharDoot</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Kirana Store Estimate -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-sm text-slate-900">Kirana Merchant Additional Revenue</h3>
+            <span class="bg-brand-100 text-brand-800 text-[10px] font-bold px-2 py-0.5 rounded-full">30-40% Growth</span>
+          </div>
+          <div class="text-3xl font-black text-brand-800">₹18,000 - ₹35,000 / mo</div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Based on just 15 additional daily online grocery orders delivered to households in your village cluster. You keep your entire regular profit margin.
+          </p>
+        </div>
+
+        <!-- Delivery Partner Estimate -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-sm text-slate-900">GharDoot Hero Gig Income</h3>
+            <span class="bg-brand-100 text-brand-800 text-[10px] font-bold px-2 py-0.5 rounded-full">Flexible Daily</span>
+          </div>
+          <div class="text-3xl font-black text-brand-800">₹14,000 - ₹22,000 / mo</div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Based on completing 12 to 18 village doorstep deliveries per day within a 3 to 4 km radius. Paid directly every evening with zero deductions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-950 text-white border-t border-brand-900 py-6 text-xs text-center text-brand-300">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="font-bold text-white mb-1">GharDoot – Your Local Delivery Partner</p>
+      <p>Official Tagline: Har Zaroorat, Ghar Tak! · Rural Partner Onboarding Hub</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <title>Shopkeeper Dashboard – GharDoot | Your Local Delivery Partner</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#044d29">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="GharDoot">
+  <link rel="apple-touch-icon" href="assets/images/logo-icon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- TOP ROLE SWITCHER BAR -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-brand-400"></span>
+        <span class="font-medium text-slate-200">GharDoot Platform Suite:</span>
+      </div>
+      <div class="flex items-center gap-1 sm:gap-2 flex-wrap">
+        <a href="index.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🛍️ Customer Storefront</span>
+        </a>
+        <a href="customer-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>📦 Customer Orders</span>
+        </a>
+        <a href="shopkeeper-dashboard.html" class="px-2.5 py-1 rounded bg-brand-700 text-white font-semibold flex items-center gap-1 shadow-sm">
+          <span>🏪 Shopkeeper Dashboard</span>
+        </a>
+        <a href="delivery-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🛵 Delivery Partner (Doot)</span>
+        </a>
+        <a href="admin-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>⚙️ Admin</span>
+        </a>
+        <a href="login.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🔑 Login</span>
+        </a>
+        <a href="brand-identity.html" class="px-2.5 py-1 rounded bg-brand-500/20 text-brand-300 hover:bg-brand-500/30 transition border border-brand-500/40">
+          <span>🎨 Brand Identity</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/logo.jpg" alt="GharDoot – Your Local Delivery Partner" class="h-14 sm:h-16 w-auto object-contain">
+      </a>
+
+      <!-- Merchant Status Indicator & Auth -->
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2 bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-full">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span class="text-xs font-bold text-emerald-800">Shop Open · Accepting Orders</span>
+        </div>
+        <div class="auth-header-container"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN BODY -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1">
+    
+    <!-- Top Hero Banner with Brand Descriptor & Tagline -->
+    <div class="bg-brand-800 rounded-3xl p-6 sm:p-8 text-white shadow-lg mb-8 relative overflow-hidden">
+      <div class="relative z-10 max-w-2xl">
+        <div class="inline-flex items-center gap-2 bg-brand-900/60 text-brand-200 text-xs font-bold px-3 py-1 rounded-full mb-2 border border-brand-600">
+          <span>GharDoot Merchant Network ·</span>
+          <span class="text-white font-extrabold">Har Zaroorat, Ghar Tak!</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-black">Kirana Partner Portal</h1>
+        <p class="text-xs sm:text-sm text-brand-100 mt-1">
+          Empowering village merchants with instant online orders, automated delivery pickup by GharDoot partners, and daily cash & UPI settlements.
+        </p>
+      </div>
+      <div class="absolute right-4 bottom-2 opacity-10 pointer-events-none">
+        <img src="assets/images/logo-icon.svg" class="w-48 h-48" alt="">
+      </div>
+    </div>
+
+    <!-- Metrics Cards -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+        <div class="text-xs text-slate-500 font-medium">Today's Village Orders</div>
+        <div class="text-2xl font-black text-brand-800 mt-1">24</div>
+        <div class="text-[11px] text-emerald-600 font-semibold mt-1">↑ 18% vs yesterday</div>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+        <div class="text-xs text-slate-500 font-medium">Today's Revenue</div>
+        <div class="text-2xl font-black text-slate-900 mt-1">₹6,840</div>
+        <div class="text-[11px] text-slate-500 mt-1">Settled daily by GharDoot</div>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+        <div class="text-xs text-slate-500 font-medium">Pending Packing</div>
+        <div class="text-2xl font-black text-amber-600 mt-1">2</div>
+        <div class="text-[11px] text-amber-700 font-semibold mt-1">GharDoot Hero reaching in 4m</div>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+        <div class="text-xs text-slate-500 font-medium">Active Village Items</div>
+        <div class="text-2xl font-black text-slate-900 mt-1">118</div>
+        <div class="text-[11px] text-brand-700 font-semibold mt-1">All in stock</div>
+      </div>
+    </div>
+
+    <!-- Active Orders to Pack & Manage -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <div class="lg:col-span-2 space-y-6">
+        
+        <div class="bg-white rounded-2xl p-6 border border-brand-200 shadow-sm">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+            <div>
+              <h2 class="text-base font-black text-slate-900 flex items-center gap-2">
+                <span>📦</span> Incoming Customer Orders
+              </h2>
+              <p class="text-xs text-slate-500">Pack items quickly for GharDoot delivery partner pickup</p>
+            </div>
+            <span class="bg-brand-100 text-brand-800 text-xs font-bold px-2.5 py-1 rounded-full">2 Pending</span>
+          </div>
+
+          <div class="divide-y divide-slate-100 mt-4">
+            
+            <!-- Order 1 -->
+            <div class="py-4 space-y-3">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="font-black text-sm text-slate-900">Order #GD-84920</span>
+                  <span class="text-xs text-slate-500 ml-2">Placed 4 mins ago</span>
+                </div>
+                <span class="bg-amber-100 text-amber-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full">
+                  Pack Now
+                </span>
+              </div>
+
+              <div class="text-xs bg-slate-50 p-3 rounded-xl border border-slate-100 space-y-1">
+                <div class="font-bold text-slate-800">Customer: Sunita Verma (Ward 3, Rampur)</div>
+                <div class="text-slate-600">• Aashirvaad Chakki Atta 5kg (x1)</div>
+                <div class="text-slate-600">• Tata Salt 1kg (x1)</div>
+                <div class="text-slate-600">• Fortune Mustard Oil 1L (x1)</div>
+              </div>
+
+              <div class="flex items-center justify-between pt-1">
+                <div class="text-xs">
+                  <span class="text-slate-500">Total Bill:</span>
+                  <span class="font-bold text-brand-800 ml-1">₹383</span>
+                  <span class="text-slate-400 text-[11px] ml-1">(COD)</span>
+                </div>
+                <div class="flex gap-2">
+                  <button onclick="alert('Order marked as PACKED. GharDoot Delivery Partner notified!')" class="bg-brand-700 hover:bg-brand-800 text-white font-bold text-xs px-4 py-2 rounded-xl transition">
+                    ✓ Mark as Packed & Ready
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Order 2 -->
+            <div class="py-4 space-y-3">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="font-black text-sm text-slate-900">Order #GD-84924</span>
+                  <span class="text-xs text-slate-500 ml-2">Placed 9 mins ago</span>
+                </div>
+                <span class="bg-blue-100 text-blue-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full">
+                  Doot Assigned
+                </span>
+              </div>
+
+              <div class="text-xs bg-slate-50 p-3 rounded-xl border border-slate-100 space-y-1">
+                <div class="font-bold text-slate-800">Customer: Mahendra Singh (Panchayat Marg)</div>
+                <div class="text-slate-600">• Red Label Tea 250g (x2)</div>
+                <div class="text-slate-600">• Lifebuoy Soap Pack of 3 (x1)</div>
+              </div>
+
+              <div class="flex items-center justify-between pt-1">
+                <div class="text-xs">
+                  <span class="text-slate-500">Total Bill:</span>
+                  <span class="font-bold text-brand-800 ml-1">₹296</span>
+                  <span class="text-slate-400 text-[11px] ml-1">(Paid Online)</span>
+                </div>
+                <button class="bg-slate-100 text-slate-700 font-bold text-xs px-4 py-2 rounded-xl cursor-default">
+                  Awaiting Delivery Pickup
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Inventory Quick Switch -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-sm font-bold text-slate-900">Village Inventory Status</h3>
+            <button class="text-xs text-brand-700 font-bold hover:underline">+ Add New Kirana Item</button>
+          </div>
+
+          <div class="space-y-3 text-xs">
+            <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="flex items-center gap-2">
+                <span class="text-lg">🌾</span>
+                <div>
+                  <div class="font-bold text-slate-800">Aashirvaad Shudh Chakki Atta (5kg)</div>
+                  <div class="text-slate-500">Price: ₹215 · MRP: ₹240</div>
+                </div>
+              </div>
+              <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold">In Stock</span>
+            </div>
+
+            <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="flex items-center gap-2">
+                <span class="text-lg">🥣</span>
+                <div>
+                  <div class="font-bold text-slate-800">Fortune Kachi Ghani Mustard Oil (1L)</div>
+                  <div class="text-slate-500">Price: ₹142 · MRP: ₹160</div>
+                </div>
+              </div>
+              <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold">In Stock</span>
+            </div>
+
+            <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="flex items-center gap-2">
+                <span class="text-lg">🧂</span>
+                <div>
+                  <div class="font-bold text-slate-800">Tata Salt Vacuum Evaporated (1kg)</div>
+                  <div class="text-slate-500">Price: ₹26 · MRP: ₹28</div>
+                </div>
+              </div>
+              <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold">In Stock</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Support & GharDoot Settlement Guarantee -->
+      <div class="space-y-6">
+        
+        <!-- GharDoot Partner Settlement Card -->
+        <div class="bg-gradient-to-br from-brand-700 to-brand-900 text-white rounded-2xl p-6 shadow-md border border-brand-800 space-y-3">
+          <div class="text-xs text-brand-200 uppercase font-bold tracking-wider">GharDoot Merchant Guarantee</div>
+          <h4 class="text-base font-black">Zero Commissions on Village Kirana Growth</h4>
+          <p class="text-xs text-brand-100 leading-relaxed">
+            GharDoot never takes away your customer base. All retail margin stays with your local shop. We charge a nominal flat delivery fee directly from the customer.
+          </p>
+          <div class="pt-2 border-t border-brand-600/50 text-xs">
+            <div class="flex justify-between py-1">
+              <span>Next Settlement:</span>
+              <span class="font-bold">Today, 8:00 PM</span>
+            </div>
+            <div class="flex justify-between py-1">
+              <span>Settlement Account:</span>
+              <span class="font-bold">SBI A/c **4091</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GharDoot Merchant Helpline -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm text-xs space-y-2">
+          <h4 class="font-bold text-slate-900">Need Help with Orders?</h4>
+          <p class="text-slate-500">Your dedicated GharDoot Village Area Manager is assigned to Rampur.</p>
+          <div class="p-3 bg-brand-50 rounded-xl border border-brand-200 mt-2">
+            <div class="font-bold text-brand-900">Ajay Sharma (Area Coordinator)</div>
+            <div class="text-brand-700">Phone: +91 94123 45678</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-950 text-white border-t border-brand-900 py-6 text-xs text-center text-brand-300">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="font-bold text-white mb-1">GharDoot – Your Local Delivery Partner</p>
+      <p>Official Tagline: Har Zaroorat, Ghar Tak! · Kirana Merchant Partner Portal</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/mock-data.js"></script>
+  <script src="assets/js/location.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/mobile.js"></script>
+</body>
+</html>

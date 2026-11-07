@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us – GharDoot | Your Local Delivery Partner</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              950: '#052e16'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- TOP ROLE SWITCHER BAR -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-brand-400"></span>
+        <span class="font-medium text-slate-200">GharDoot Platform Suite:</span>
+      </div>
+      <div class="flex items-center gap-1 sm:gap-2 flex-wrap">
+        <a href="index.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🛍️ Customer Storefront</span>
+        </a>
+        <a href="customer-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>📦 Customer Orders</span>
+        </a>
+        <a href="shopkeeper-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🏪 Shopkeeper</span>
+        </a>
+        <a href="delivery-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>🛵 Delivery Partner (Doot)</span>
+        </a>
+        <a href="admin-dashboard.html" class="px-2.5 py-1 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition">
+          <span>⚙️ Admin</span>
+        </a>
+        <a href="about.html" class="px-2.5 py-1 rounded bg-brand-700 text-white font-semibold flex items-center gap-1 shadow-sm">
+          <span>📖 About Us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/logo.jpg" alt="GharDoot – Your Local Delivery Partner" class="h-14 sm:h-16 w-auto object-contain">
+      </a>
+      <div class="flex items-center gap-4 text-xs font-bold">
+        <a href="index.html" class="text-slate-700 hover:text-brand-700">Home Storefront</a>
+        <a href="partner-with-us.html" class="text-slate-700 hover:text-brand-700">Partner With Us</a>
+        <a href="brand-identity.html" class="text-brand-700 hover:underline">Brand Guidelines</a>
+        <a href="index.html#groceries-section" class="bg-brand-700 hover:bg-brand-800 text-white px-4 py-2 rounded-xl transition shadow">
+          Order Essentials &rarr;
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN ABOUT CONTENT -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12 flex-1">
+    
+    <!-- Hero Banner -->
+    <div class="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 text-white rounded-3xl p-8 sm:p-12 shadow-xl relative overflow-hidden">
+      <div class="relative z-10 max-w-3xl space-y-4">
+        <div class="inline-flex items-center gap-2 bg-brand-500/20 border border-brand-400/40 px-3.5 py-1 rounded-full text-xs font-bold text-brand-200">
+          <span>Our Vision & Mission</span>
+          <span>•</span>
+          <span class="text-white">Har Zaroorat, Ghar Tak!</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
+          Bringing The Rural Market Right to Every Village Doorstep
+        </h1>
+        <p class="text-base sm:text-lg text-brand-100 leading-relaxed font-normal">
+          <strong class="text-white font-bold">GharDoot</strong> is a village-based hyperlocal grocery and daily essentials delivery platform connecting customers with existing local shops. We bridge the digital divide for Bharat while preserving neighborhood community commerce.
+        </p>
+
+        <div class="pt-2 flex flex-wrap gap-4 text-xs">
+          <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-xl border border-white/15">
+            <span class="text-brand-300 font-bold">Brand Descriptor:</span> <span class="text-white font-black">Your Local Delivery Partner</span>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-xl border border-white/15">
+            <span class="text-brand-300 font-bold">Tagline:</span> <span class="text-white font-black">Har Zaroorat, Ghar Tak!</span>
+          </div>
+        </div>
+      </div>
+      <div class="absolute right-0 bottom-0 opacity-10 pointer-events-none">
+        <img src="assets/images/logo-icon.svg" class="w-96 h-96" alt="">
+      </div>
+    </div>
+
+    <!-- The Genesis of GharDoot -->
+    <section class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4">
+        <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">The Rural Challenge</span>
+        <h2 class="text-2xl font-black text-slate-900 mt-1">Why GharDoot Was Born</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-sm text-slate-600 leading-relaxed">
+        <div class="space-y-4">
+          <p>
+            In millions of villages across India, elderly grandparents, busy farm families, and mothers managing households often face hardship travelling 2 to 5 kilometers on unpaved roads to fetch urgent daily essentials like milk, cooking oil, baby soap, or salt.
+          </p>
+          <p>
+            Meanwhile, urban quick-commerce companies burn millions building artificial "dark stores" that destroy small mom-and-pop Kirana stores. <strong>GharDoot chose a different path:</strong>
+          </p>
+          <div class="p-4 bg-brand-50 rounded-2xl border border-brand-200 text-xs text-brand-900 space-y-2">
+            <div class="font-black text-sm text-brand-800">The GharDoot Solution:</div>
+            <div>• Connect existing, beloved village Kirana merchants directly with neighborhood homes.</div>
+            <div>• Train local village youth with bicycles and motorbikes as dignified "GharDoots" (delivery partners).</div>
+            <div>• Deliver orders in 15 to 30 minutes at authentic counter rates with Cash on Delivery (COD) and scan-and-pay UPI.</div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 space-y-4">
+          <h3 class="text-sm font-black text-slate-900 uppercase tracking-wide">Community Impact in Numbers</h3>
+          
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center shadow-xs">
+              <div class="text-3xl font-black text-brand-700">22+</div>
+              <div class="text-xs font-bold text-slate-800 mt-1">Local Village Shops</div>
+              <div class="text-[11px] text-slate-500">100% locally owned</div>
+            </div>
+
+            <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center shadow-xs">
+              <div class="text-3xl font-black text-brand-700">14</div>
+              <div class="text-xs font-bold text-slate-800 mt-1">GharDoot Heroes</div>
+              <div class="text-[11px] text-slate-500">Earning daily at home</div>
+            </div>
+
+            <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center shadow-xs">
+              <div class="text-3xl font-black text-brand-700">4,400+</div>
+              <div class="text-xs font-bold text-slate-800 mt-1">Village Households</div>
+              <div class="text-[11px] text-slate-500">Served across 4 clusters</div>
+            </div>
+
+            <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center shadow-xs">
+              <div class="text-3xl font-black text-brand-700">22 min</div>
+              <div class="text-xs font-bold text-slate-800 mt-1">Average Delivery Time</div>
+              <div class="text-[11px] text-slate-500">Fast doorstep delivery</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table: GharDoot vs Urban Dark-Store Models -->
+    <section class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4">
+        <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Business Architecture</span>
+        <h2 class="text-2xl font-black text-slate-900 mt-1">How GharDoot Differs from Urban Platforms</h2>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs text-left border-collapse">
+          <thead>
+            <tr class="bg-slate-100 text-slate-700 font-bold uppercase tracking-wider">
+              <th class="p-3.5 rounded-l-xl">Feature</th>
+              <th class="p-3.5 bg-brand-100 text-brand-900 font-black">GharDoot Rural Model</th>
+              <th class="p-3.5 rounded-r-xl">Typical Urban Dark Stores</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr>
+              <td class="p-3.5 font-bold text-slate-800">Inventory Sourcing</td>
+              <td class="p-3.5 bg-brand-50/50 font-bold text-brand-800">Existing local village Kiranas & Dairies</td>
+              <td class="p-3.5 text-slate-600">Company-owned centralized warehouses</td>
+            </tr>
+            <tr>
+              <td class="p-3.5 font-bold text-slate-800">Local Merchant Impact</td>
+              <td class="p-3.5 bg-brand-50/50 font-bold text-emerald-700">Empowers and boosts local shop revenue by 30-40%</td>
+              <td class="p-3.5 text-rose-600">Pushes neighborhood retail into closure</td>
+            </tr>
+            <tr>
+              <td class="p-3.5 font-bold text-slate-800">Payment Habits</td>
+              <td class="p-3.5 bg-brand-50/50 font-bold text-brand-800">100% Cash on Delivery (COD) + UPI QR scan</td>
+              <td class="p-3.5 text-slate-600">Heavy push for credit cards/wallets</td>
+            </tr>
+            <tr>
+              <td class="p-3.5 font-bold text-slate-800">Delivery Fleet</td>
+              <td class="p-3.5 bg-brand-50/50 font-bold text-brand-800">Local village youth working inside their home block</td>
+              <td class="p-3.5 text-slate-600">Migrant gig workers facing high city rents</td>
+            </tr>
+            <tr>
+              <td class="p-3.5 font-bold text-slate-800">Pricing to Customer</td>
+              <td class="p-3.5 bg-brand-50/50 font-bold text-brand-800">Exact local shop price + ₹15 village delivery</td>
+              <td class="p-3.5 text-slate-600">Surge fees, handling charges & platform fees</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <div class="bg-brand-900 text-white rounded-3xl p-8 border border-brand-800 text-center space-y-4">
+      <h3 class="text-2xl font-black">Join the Rural Retail Revolution</h3>
+      <p class="text-xs sm:text-sm text-brand-200 max-w-xl mx-auto">
+        Whether you are a village resident in need of daily rations, a kirana shopkeeper looking to grow, or a young person seeking daily local income — GharDoot welcomes you.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+        <a href="index.html" class="bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs px-5 py-3 rounded-xl transition shadow">
+          Shop Village Essentials
+        </a>
+        <a href="partner-with-us.html" class="bg-white hover:bg-brand-50 text-brand-900 font-bold text-xs px-5 py-3 rounded-xl transition">
+          Partner With GharDoot &rarr;
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-950 text-white border-t border-brand-900 py-6 text-xs text-center text-brand-300">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="font-bold text-white mb-1">GharDoot – Your Local Delivery Partner</p>
+      <p>Official Tagline: Har Zaroorat, Ghar Tak! · Rural Hyperlocal Essentials Delivery</p>
+    </div>
+  </footer>
+
+</body>
+</html>
